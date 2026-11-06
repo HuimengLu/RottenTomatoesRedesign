@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rotten Tomatoes Redesign</title>
+<meta name="description" content="Rotten Tomatoes has plenty of information about a movie, but finding what actually helps people decide whether to watch it isn&#x27;t always easy. I wanted to rethink the movie page while keeping its core value and business model intact.">
+<link rel="icon" href="../assets/svg/tomato.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../shared/system.css?v=d863ed70">
+<link rel="stylesheet" href="plates.css?v=47c19596">
+</head>
+<body class="v-plates">
+<header class="top wrap">
+  <a class="top__me" href="#intro">Cynthia Lu</a>
+  <nav class="top__nav" data-nav aria-label="Chapters"><a href="#intro" data-label="Intro">Intro</a><a href="#research" data-label="Research">Research</a><a href="#limitations" data-label="Limitations">Limitations</a><a href="#decisions" data-label="Design Decisions">Design Decisions</a><a href="#reflection" data-label="Reflection">Reflection</a></nav>
+</header>
+<main>
+<section id="intro">
+  <div class="wrap intro">
+    <h1 class="intro__t">Rotten Tomatoes Redesign</h1>
+    <div class="intro__row">
+      <p class="lead intro__s">Rotten Tomatoes has plenty of information about a movie, but finding what actually helps people decide whether to watch it isn&#x27;t always easy. I wanted to rethink the movie page while keeping its core value and business model intact.</p>
+      <div class="intro__btns"><a class="chip chip--red" href="../../design-explorations/B-prototype/index.html" target="_blank" rel="noopener">Interactive Prototype<img src="../assets/svg/arrow-elbow-right-white.svg" width="22" height="22" alt=""></a><a class="chip" href="https://www.figma.com/design/NDBKEzz1Cymo605dIpahpY/Rotten-Tomatoes-Redesign" target="_blank" rel="noopener">Figma Link<img src="../assets/svg/arrow-elbow-right-dark.svg" width="22" height="22" alt=""></a></div>
+    </div>
+  </div>
+  <div class="wipe wrap" data-wipe>
+    <div class="wipe__pin">
+      <figure class="wipe__fig">
+        <div class="cmp" style="--x:50%">
+  <img src="../assets/img/old-first.webp?v=4d689808" width="2880" height="1800" alt="Original Rotten Tomatoes page, first screen" loading="eager" decoding="async">
+  <span class="cmp__tag cmp__tag--a">Original</span>
+  <div class="cmp__after"><video preload=metadata muted loop playsinline poster="../assets/img/poster-rt-hero.webp?v=bc137a83" width="1908" height="1080" aria-label="Scrolling through the redesigned Rotten Tomatoes page"><source src="../assets/video/web/rt-hero.mp4?v=3a07785c" type="video/mp4"></video><span class="cmp__tag cmp__tag--b">Redesign</span></div>
+  <div class="cmp__bar"></div>
+</div>
+        <figcaption class="cap cap--end"><a class="link" href="https://www.rottentomatoes.com/m/la_la_land" target="_blank" rel="noopener">Original website</a><a class="link" href="../../design-explorations/B-prototype/index.html" target="_blank" rel="noopener">Interactive Redesign</a></figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="grid wrap open-text">
+    <div class="open-text__b reveal">
+      <p class="pull">Rotten Tomatoes has everything a moviegoer needs to know about a film. However, finding what actually helps them make a decision can feel surprisingly difficult.</p>
+      <p class="pull open-q">How might we make Rotten Tomatoes better at helping people decide what to watch?</p>
+    </div>
+  </div>
+</section>
+<section id="research">
+  <div class="plates"><header class="chp chp--red">
+  
+  <div class="chp__meta"><span>01</span><span>Research</span></div>
+  <h2 class="chp__t chunk">Is <span class="nb">R<span class="o-splat"><i></i></span>tten</span> <span class="nb">Tomat<i class="glyph glyph--tomato"></i>es</span> actually broken?</h2>
+</header></div>
+  <div class="grid wrap sect-lead"><p class="lead reveal">I combined heuristic evaluation with Reddit discussions to understand where the existing experience falls short and what users find confusing.</p></div>
+  <div class="row">
+  <h3 class="row__h reveal">Heuristic evaluation</h3>
+  <p class="row__b reveal">The heuristic evaluation revealed two major issues: the ratings were easy to miss because of poor information hierarchy, and ads often competed with editorial content.</p>
+</div>
+  <div class="grid wrap pair issues"><div class="issue reveal"><span class="issue__n">1</span><p>The first screen lacks a clear visual hierarchy. The Tomatometer and Popcornmeter are difficult to find, even though they are essential to helping users decide whether to watch a movie.</p></div><div class="issue reveal"><span class="issue__n">2</span><p>Ads are mixed in with movie content, making it harder for users to focus on the information they came to see.</p></div></div>
+  <div class="grid wrap pair"><div class="plate zoomable " data-zoom="../assets/img/old-hierarchy.webp?v=77025dee" data-title="Original first screen: a red box marks the scores at the very bottom, below a large hero and partly covered by a floating ad" role="button" tabindex="0" aria-label="View larger: Original first screen: a red box marks the scores at the very bottom, below a large hero and partly covered by a floating ad"><img src="../assets/img/old-hierarchy.webp?v=77025dee" width="2200" height="1250" alt="Original first screen: a red box marks the scores at the very bottom, below a large hero and partly covered by a floating ad" loading="lazy" decoding="async"></div><div class="plate zoomable " data-zoom="../assets/img/old-ads-mixed.webp?v=92beb979" data-title="Original page: red boxes mark a tall ad, a banner ad and a floating ad placed among the photos and Movie Info" role="button" tabindex="0" aria-label="View larger: Original page: red boxes mark a tall ad, a banner ad and a floating ad placed among the photos and Movie Info"><img src="../assets/img/old-ads-mixed.webp?v=92beb979" width="2200" height="1250" alt="Original page: red boxes mark a tall ad, a banner ad and a floating ad placed among the photos and Movie Info" loading="lazy" decoding="async"></div></div>
+  <div class="row">
+  <h3 class="row__h reveal">Community discussions</h3>
+  <p class="row__b reveal">Community discussions pointed to confusion around the rating system, particularly the difference between Critics and Audience reviews and what the scores actually mean.</p>
+</div>
+  <div class="grid wrap pair cards"><article class="card reveal"><h4 class="card__t">Users are unclear about the difference between Critics and Audience reviews</h4><ul><li class="q">
+  <blockquote class="q__b"><span class="q__m" aria-hidden="true">“</span><p>Why would there be such a difference? Which one should you trust more?</p></blockquote>
+  <cite class="q__by">u/summernights64</cite>
+</li></ul></article><article class="card reveal"><h4 class="card__t">Users want more transparency in movie scores</h4><ul><li class="q">
+  <blockquote class="q__b"><span class="q__m" aria-hidden="true">“</span><p>The &#x27;Average rating&#x27; is hidden under &#x27;see score details&#x27; for some reason, though I found it to be a more reliable parameter than the percentage rating.</p></blockquote>
+  <cite class="q__by">u/0iam</cite>
+</li><li class="q">
+  <blockquote class="q__b"><span class="q__m" aria-hidden="true">“</span><p>It only shows the completely useless percent.</p></blockquote>
+  <cite class="q__by">u/Level-Pineapple3503</cite>
+</li></ul></article></div>
+</section>
+<section id="limitations">
+  <div class="plates"><header class="chp chp--gray">
+  
+  <div class="chp__meta"><span>02</span><span>Limitations</span></div>
+  <h2 class="chp__t chunk">What needs to be preserved?</h2>
+</header></div>
+  <div class="row">
+  <h3 class="row__h reveal">Support pre-viewing decision</h3>
+  <p class="row__b reveal">I chose to focus on the main use case, which is the pre-viewing decision: someone has a particular movie in mind and wants to decide whether it&#x27;s worth watching before finding where to stream or rent it.</p>
+</div>
+  <ol class="wide jr"><li class=""><span class="jr__s">Idea</span><span class="jr__q">What movie?</span></li><li class="on"><span class="jr__s">Evaluate / validate</span><span class="jr__q">Is it worth my time?</span></li><li class=""><span class="jr__s">Decide</span><span class="jr__q">Where to watch?</span></li></ol>
+  <div class="row">
+  <h3 class="row__h reveal">Be mindful of the business model</h3>
+  <p class="row__b reveal">Rotten Tomatoes is also an advertising and distribution business owned by Fandango. Ads and viewing options therefore need to remain part of the experience.</p>
+</div>
+  <div class="row">
+  <h3 class="row__h reveal">Make sure RT’s core value stands out</h3>
+  <p class="row__b reveal">Throughout the redesign, I wanted to keep its two signature rating systems at the center.</p>
+</div>
+  <div class="wide"><div class="icons"><img class="icons__i" src="../assets/svg/splat.svg" alt="" width="96" height="96"><img class="icons__i" src="../assets/svg/tomato.svg" alt="" width="96" height="96"><img class="icons__i" src="../assets/svg/popcorn.svg" alt="" width="96" height="96"><img class="icons__i" src="../assets/svg/spilled.svg" alt="" width="96" height="96"></div></div>
+</section>
+<section id="decisions">
+  <div class="plates"><header class="chp chp--photo">
+  <div class="chp__bg"><img src="../assets/img/still-hero-poster.webp?v=3645a80d" width="2000" height="1333" alt="" loading="lazy" decoding="async"></div>
+  <div class="chp__meta"><span>04</span><span>Design Decisions</span></div>
+  <h2 class="chp__t chunk">Key Design Decisions</h2>
+</header></div>
+  <article class="dec">
+  <header class="dec__h"><span class="dec__n">01</span><h3 class="dec__t">Reorganizing the first impression</h3></header>
+  <div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/hero-interactions.mp4?v=57b39b9f" data-kind="video" data-title="Redesigned hero with the trailer, ratings and rental action" role="button" tabindex="0" aria-label="View larger: Redesigned hero with the trailer, ratings and rental action"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-hero-interactions.webp?v=1da9b066" width="1908" height="1080" aria-label="Redesigned hero with the trailer, ratings and rental action"><source src="../assets/video/web/hero-interactions.mp4?v=57b39b9f" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>I wanted users to get a sense of whether a movie is worth watching as soon as they land on the page. In the original layout, secondary videos took up much of the first screen, while the Tomatometer and Popcornmeter were difficult to find.</p><p>I moved the ratings, essential movie information, and primary actions higher in the hierarchy, removed secondary videos, and added a quote from a Top Critic to give users an immediate sense of the film&#x27;s reception.</p><p>I also wanted the page to feel more connected to the movie itself. I used a dark background inspired by its poster and made the trailer the visual centerpiece, creating a more immersive introduction to the film.</p></div>
+</div>
+</article><article class="dec">
+  <header class="dec__h"><span class="dec__n">02</span><h3 class="dec__t">Separating advertising from editorial content</h3></header>
+  <div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/ads.mp4?v=ba48063d" data-kind="video" data-title="Scrolling past dedicated ad space on the redesigned page" role="button" tabindex="0" aria-label="View larger: Scrolling past dedicated ad space on the redesigned page"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-ads.webp?v=bb31fe0d" width="1908" height="1080" aria-label="Scrolling past dedicated ad space on the redesigned page"><source src="../assets/video/web/ads.mp4?v=ba48063d" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>Since advertising is part of Rotten Tomatoes&#x27; business model, removing it wasn&#x27;t a realistic solution. The real issue was how easily ads blended into the editorial experience.</p><p>I reserved dedicated space for advertising so it wouldn&#x27;t overlap with essential movie information. I also used differences in container width, background, corner radius, and spacing to make the distinction clearer while keeping ads within the page.</p></div>
+</div>
+</article><article class="dec">
+  <header class="dec__h"><span class="dec__n">03</span><h3 class="dec__t">Giving critics and audiences different voices</h3></header>
+  <div class="dec__row">
+  <div class="plate zoomable dec__m dec__m--tile" data-zoom="../assets/img/x-side-by-side.webp?v=2a408648" data-title="Early exploration: Critics and Audience Reviews side by side in matching cards" role="button" tabindex="0" aria-label="View larger: Early exploration: Critics and Audience Reviews side by side in matching cards"><span class="plate__tag">One of early explorations</span><img src="../assets/img/x-side-by-side.webp?v=2a408648" width="2240" height="2180" alt="Early exploration: Critics and Audience Reviews side by side in matching cards" loading="lazy" decoding="async"></div>
+  <div class="dec__x reveal"><p>I initially explored a side-by-side layout with similar visual treatments for both review types. However, I realized that readers look for different things in each section, so I chose a vertical layout with distinct visual treatments.</p></div>
+</div><div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/critics-reviews.mp4?v=2c35d19d" data-kind="video" data-title="Filtering Critics Reviews and opening the expanded panel" role="button" tabindex="0" aria-label="View larger: Filtering Critics Reviews and opening the expanded panel"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-critics-reviews.webp?v=f197672c" width="1908" height="1080" aria-label="Filtering Critics Reviews and opening the expanded panel"><source src="../assets/video/web/critics-reviews.mp4?v=2c35d19d" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>For Critics Reviews, the source is an important part of the review&#x27;s credibility. I drew inspiration from newspaper layouts, giving more prominence to the publication and original review excerpt.</p></div>
+</div><div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/audience-reviews.mp4?v=e63e848f" data-kind="video" data-title="Reading Audience Reviews and writing a review" role="button" tabindex="0" aria-label="View larger: Reading Audience Reviews and writing a review"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-audience-reviews.webp?v=69650e20" width="1908" height="1080" aria-label="Reading Audience Reviews and writing a review"><source src="../assets/video/web/audience-reviews.mp4?v=e63e848f" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>For Audience Reviews, the opinions themselves matter more than who wrote them. I used a familiar discussion-style layout that puts comments first, gives them more room, and makes space for user interaction.</p></div>
+</div>
+</article><article class="dec">
+  <header class="dec__h"><span class="dec__n">04</span><h3 class="dec__t">Making reviews more transparent</h3></header>
+  <div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/rating-ratio.mp4?v=343aca8a" data-kind="video" data-title="Average rating and rating distribution in the Audience Reviews panel" role="button" tabindex="0" aria-label="View larger: Average rating and rating distribution in the Audience Reviews panel"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-rating-ratio.webp?v=fb3dae6f" width="1908" height="1080" aria-label="Average rating and rating distribution in the Audience Reviews panel"><source src="../assets/video/web/rating-ratio.mp4?v=343aca8a" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>A single Audience Score can hide very different rating patterns. Two movies could both score 82%, even though one receives consistently high ratings while the other has a much wider spread.</p><p>I added the average rating and rating distribution to the Audience Reviews panel, allowing users to see the sentiment behind the percentage.</p></div>
+</div><div class="dec__row">
+  <div class="plate zoomable dec__m" data-zoom="../assets/video/web/hover-explanations.mp4?v=01e72457" data-kind="video" data-title="Hover explanations on the Critics and Audience ratings" role="button" tabindex="0" aria-label="View larger: Hover explanations on the Critics and Audience ratings"><video data-inview preload=none muted loop playsinline poster="../assets/img/poster-hover-explanations.webp?v=4e66ed84" width="1908" height="1080" aria-label="Hover explanations on the Critics and Audience ratings"><source src="../assets/video/web/hover-explanations.mp4?v=01e72457" type="video/mp4"></video></div>
+  <div class="dec__x reveal"><p>I also added hover explanations to both Critics and Audience ratings. Since users may not know what each score represents, these explanations make the rating systems easier to understand without requiring them to leave the page.</p></div>
+</div>
+</article>
+</section>
+<section id="reflection">
+  <div class="plates"><header class="chp chp--photo chp--faces">
+  <div class="chp__bg"><img src="../assets/img/still-end-still.webp?v=515c975d" width="2650" height="1760" alt="" loading="lazy" decoding="async"></div>
+  <div class="chp__meta"><span>06</span><span>Reflection</span></div>
+  <h2 class="chp__t chunk">Reflections</h2>
+</header></div>
+  <div class="grid wrap closing"><div class="closing__b lead reveal"><p>This project turned out to be quite different from what I initially expected. During research, I became interested in a trade-off I hadn&#x27;t anticipated: how can Rotten Tomatoes support its advertising business without compromising the experience people come for?</p><p>The first time I visited the site, I was greeted by an ad for a shoe brand, completely unrelated to movies. It made me think about how irrelevant advertising can disrupt the consistency of an experience and, over time, affect how much users trust the platform.</p><p>I came to believe that monetized content needs clear boundaries. In my redesign, I explored this through dedicated ad space and subtle visual distinctions, such as background colors and padding. These small changes help separate ads from editorial content without requiring advertising to disappear.</p><p>Given more time, I&#x27;d like to explore where that boundary should be. For example, how much visual separation is enough? Could ad relevance be considered alongside placement? And how can we evaluate the impact of these choices on both user experience and ad performance?</p></div></div>
+</section>
+</main>
+<footer class="foot wrap">
+  <p>Cynthia Lu<br><span class="small">Product design take-home for Prelim, November 2026</span></p>
+  <p class="small foot__d">Independent concept. Not affiliated with Rotten Tomatoes, Fandango or the film’s rights holders. Rotten Tomatoes marks, La La Land imagery and quoted reviews belong to their owners.</p>
+  <a class="chip" href="#intro">Back to top</a>
+</footer>
+<script src="../shared/site.js?v=b4b71d45"></script>
+</body></html>

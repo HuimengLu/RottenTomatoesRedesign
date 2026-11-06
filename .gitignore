@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.claude/
+
+# The prototype's lab pages and the files only they use
+design-explorations/B-prototype/lab/
+design-explorations/B-prototype/src/lab.py
+design-explorations/B-prototype/src/endcredits.py
+design-explorations/B-prototype/assets/end-still.jpg
+
+# Kept out of the public repo
+heuristic-evaluation/
+case-study/assets/img/live-duplicate-videos.webp
