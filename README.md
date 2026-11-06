@@ -6,4 +6,4 @@ Rotten Tomatoes has plenty of information about a movie, but finding what actual
 | --- | --- | --- |
 | Interactive redesign | [Open prototype](https://huimenglu.github.io/RottenTomatoesRedesign/interactive/) | The working prototype of the redesigned movie page. |
 | Case study | [Read case study](https://huimenglu.github.io/RottenTomatoesRedesign/case-study/) | The research, constraints and design decisions behind the redesign. |
-| Figma file | [Open in Figma](https://www.figma.com/design/e40l8Q1wHbuS1qlspq4L4r/-Public--Rotten-Tomatoes-Redesign?node-id=78-2&t=irj5m6EIjaMHRqR7-0) | The final design, research, early explorations and iterations. |
+| Figma file | [Open in Figma](https://www.figma.com/design/e40l8Q1wHbuS1qlspq4L4r/-Public--Rotten-Tomatoes-Redesign?node-id=2001-8&p=f&t=9Kof9KUjp7Guh6cn-0) | The final design, research, early explorations and iterations. |
