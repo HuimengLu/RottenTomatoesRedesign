@@ -8,7 +8,7 @@ from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-ASSETS = '../assets'
+ASSETS = 'assets'
 
 esc = html.escape
 
@@ -22,7 +22,7 @@ def size(name):
 @lru_cache(maxsize=None)
 def versioned(url):
     """Adds a hash of the file to its URL, so a browser holding an older build fetches the new one."""
-    with open(os.path.join(ROOT, 'plates', url), 'rb') as f:
+    with open(os.path.join(ROOT, url), 'rb') as f:
         return f'{url}?v={hashlib.sha256(f.read()).hexdigest()[:8]}'
 
 
@@ -89,7 +89,7 @@ def head(title, css, desc):
 <link rel="icon" href="{ASSETS}/svg/tomato.svg" type="image/svg+xml">
 <link rel="preload" href="{ASSETS}/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{ASSETS}/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{versioned("../shared/system.css")}">
+<link rel="stylesheet" href="{versioned("shared/system.css")}">
 <link rel="stylesheet" href="{versioned(css)}">
 </head>'''
 

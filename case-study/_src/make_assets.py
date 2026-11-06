@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 FIG = os.path.join(HERE, 'figma')
 OUT = os.path.join(ROOT, 'assets', 'img')
-PROTO = os.path.join(os.path.dirname(ROOT), 'design-explorations', 'B-prototype', 'assets')
+PROTO = os.path.join(os.path.dirname(ROOT), 'interactive', 'assets')
 HEUR = os.path.join(os.path.dirname(ROOT), 'heuristic-evaluation', 'img')
 
 os.makedirs(OUT, exist_ok=True)

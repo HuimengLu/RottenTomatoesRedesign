@@ -24,7 +24,7 @@ META = {
                   'Rotten Tomatoes marks, La La Land imagery and quoted reviews belong to their owners.',
     'placeholders': 'Interface copy is real Rotten Tomatoes content captured in November 2026. Streaming prices, '
                     'audience star values, helpful counts and ad creatives are placeholders.',
-    'prototype': '../../design-explorations/B-prototype/index.html',
+    'prototype': '../../interactive/index.html',
     'prototype_note': 'Working HTML prototype built from an earlier iteration, so its hero differs from the final Figma frame.',
 }
 

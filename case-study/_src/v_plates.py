@@ -172,5 +172,5 @@ def page():
 {reflection()}
 </main>
 {footer()}
-<script src="{versioned("../shared/site.js")}"></script>
+<script src="{versioned("shared/site.js")}"></script>
 </body></html>'''

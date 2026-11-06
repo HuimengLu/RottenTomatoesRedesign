@@ -448,7 +448,8 @@ def build():
     DRAWERS = drawers.critics_drawer() + drawers.audience_drawer()
     css = CSS + drawers.CSS + theater.CSS
     html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>La La Land Prototype</title><link rel="preload" as="image" href="assets/hero-poster.jpg"><style>{css}</style></head>
+<title>La La Land Prototype</title>
+<link rel="icon" href="assets/tomato.svg" type="image/svg+xml"><link rel="preload" as="image" href="assets/hero-poster.jpg"><style>{css}</style></head>
 <body>
 <div id="sticky" aria-hidden="true"><div id="stickyInner">{sticky}</div></div>
 <div id="stage">{page}<div id="tip" role="tooltip"></div></div>

@@ -16,8 +16,8 @@ META = {
 }
 
 LINKS = {
-    'prototype': '../../design-explorations/B-prototype/index.html',
-    'figma': 'https://www.figma.com/design/e40l8Q1wHbuS1qlspq4L4r/-Public-Rotten-Tomatoes-Redesign',
+    'prototype': '../interactive/',
+    'figma': 'https://www.figma.com/design/e40l8Q1wHbuS1qlspq4L4r/-Public--Rotten-Tomatoes-Redesign?node-id=2001-8&t=N8j2tjfNagJdpQhZ-1',
     'original': 'https://www.rottentomatoes.com/m/la_la_land',
 }
 
