@@ -17,7 +17,7 @@ META = {
 
 LINKS = {
     'prototype': '../../design-explorations/B-prototype/index.html',
-    'figma': 'https://www.figma.com/design/NDBKEzz1Cymo605dIpahpY/Rotten-Tomatoes-Redesign',
+    'figma': 'https://www.figma.com/design/e40l8Q1wHbuS1qlspq4L4r/-Public-Rotten-Tomatoes-Redesign',
     'original': 'https://www.rottentomatoes.com/m/la_la_land',
 }
 
